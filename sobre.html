@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Material/matera.png" type="image/x-icon">
+  <title>Materialize - Seminário | Sobre o Projeto</title>
+  <!-- Importando CSS do Materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Estilos personalizados -->
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      min-height: 100%;
+      flex-direction: column;
+      margin: 0;
+      background-color: #fff3e0;
+    }
+    main {
+      flex: 1 0 auto;
+    }
+
+    .card-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    .container {
+    width: 100%;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    }
+
+
+    .row{
+      width: 90%;
+    }
+
+    footer {
+      margin-top: auto;
+    }
+  /* Estilos para desktop */
+  .desktop-carousel {
+      display: block; /* Exibe o carrossel original por padrão */
+    }
+
+    .mobile-carousel {
+      display: none; /* Oculta o carrossel para dispositivos móveis por padrão */
+    }
+
+    /* Estilos para dispositivos móveis usando media query */
+    @media only screen and (max-width: 600px) {
+      .desktop-carousel {
+        display: none; /* Oculta o carrossel original em dispositivos móveis */
+      }
+
+      .mobile-carousel {
+        display: block; /* Exibe o carrossel para dispositivos móveis */
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+   <!-- Barra de navegação -->
+   <nav>
+    <div class="#ef9a9a red lighten-3">
+      <a href="#!" class="brand-logo center">Materialize | Sobre nós</a>
+      <ul class="left hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre o projeto</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+
+  <!-- Barra lateral para dispositivos móveis -->
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="sobre.html">Sobre o projeto</a></li>
+    <li class="active"><a href="contato.html">Contato</a></li>
+  </ul>
+
+  <!-- Carrossel original para desktop -->
+  <div class="desktop-carousel carousel carousel-slider center">
+    <div class="carousel-fixed-item center">
+      <a class="btn waves-effect white grey-text darken-text-2">Proximo</a>
+    </div>
+    <div class="carousel-item red white-text" href="#one!">
+        <img src="Material/vt1.gif">
+    </div>
+    <div class="carousel-item amber white-text" href="#two!">
+      <img src="Material/vt2.gif">
+    </div>
+    <div class="carousel-item green white-text" href="#three!">
+      <img src="Material/vt3.gif">
+    </div>
+  </div>
+
+  <!-- Carrossel para dispositivos móveis -->
+  <div class="mobile-carousel carousel carousel-slider center">
+    <div class="carousel-fixed-item center">
+      <a class="btn waves-effect white grey-text darken-text-2">Proximo</a>
+    </div>
+    <div class="carousel-item red white-text" href="#one!">
+      <img src="Material/mbl1.png">
+    </div>
+    <div class="carousel-item amber white-text" href="#two!">
+      <img src="Material/mbl2.png">
+    </div>
+    <div class="carousel-item green white-text" href="#three!">
+      <img src="Material/mbl3.png">
+    </div>
+  </div>
+
+  <!-- Conteúdo dos Cards -->
+  <div class="container">
+    <div class="row">
+
+      <div class="col s12 m3">
+        <div class="card">
+          <div class="card-image">
+            <img src="Material/imgdocs.png">
+            <span class="card-title">Documentação</span>
+
+            <a href="Material/Seminário Materialize.pdf" download class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">file_download</i></a>
+          </div>
+
+          <div class="card-content">
+            <p>Clique no botão para baixar o documento. Toda documentação do nosso projeto aqui.</p>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="col s12 m3">
+        <div class="card">
+          <div class="card-image">
+            <img src="Material/imgcontt.png">
+            <span class="card-title">Contato</span>
+            <a href="contato.html" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">call</i></a>
+          </div>
+          <div class="card-content">
+            <p>Nosso contato mais direto, você encontra aqui.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m3">
+        <div class="card">
+          <div class="card-image">
+            <img src="Material/imgmaterial.png">
+            <span class="card-title">Materialize</span>
+            <a  href="https://materializecss.com/"   class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+          </div>
+          <div class="card-content">
+            <p>Voce pode encontar o site do Materialize com todas sua documentação diretamente aqui.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m3">
+        <div class="card">
+          <div class="card-image">
+            <img src="Material/3.png">
+            <span class="card-title">Equipe</span>
+            <a href="equipe.html" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">insert_emoticon</i></a>
+          </div>
+          <div class="card-content">
+            <p>Venha conhecer cada integrante da equipe de desenvolvimento.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Formulário de Contato-->
+  <div class="row #fff3e0 orange lighten-5">
+    <div class="col s6">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12 ">
+            <input placeholder="Digite seu nome" id="first_name" type="text" class="validate">
+            <label for="first_name">Nome</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Sobrenome</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+            <span class="helper-text" data-error="wrong" data-success="right">Digite um email válido</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="message" class="materialize-textarea"></textarea>
+            <label for="message">Mensagem</label>
+          </div>
+          <div class="card-action center-align">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col s6">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Mensagem da Equipe</span>
+          <p>Agradecemos a todos os envolvidos a nossa iniciativa de desenvolver algo completamente unico.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+        
+
+  <!-- Rodapé -->
+  <footer class="page-footer #ef5350 red lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Seminário - Materialize</h5>
+          <p class="grey-text text-lighten-4">Todos os direitos reservados &copy; 2024</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links diretos</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+            <li><a class="grey-text text-lighten-3" href="sobre.html">Sobre nós</a></li>
+            <li><a class="grey-text text-lighten-3" href="contato.html">Contato</a></li>
+            <li><a class="grey-text text-lighten-3" href="equipe.html">Equipe</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Importando scripts do Materialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    // Inicialize componentes do Materialize
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+
+          // Inicialize o carrossel
+    var carousel = document.querySelector('.carousel');
+    var instance = M.Carousel.init(carousel, {
+      fullWidth: false,
+      indicators: true,
+      duration: 500, // Tempo de transição entre os slides (em milissegundos)
+      shift: 0, // Deslocamento do slide em pixels
+      numVisible: 1, // Número de slides visíveis ao mesmo tempo
+      padding: 0, // Espaçamento entre os slides em pixels
+      interval: 10000 // Intervalo de tempo entre a transição de slides (em milissegundos)
+    });
+
+    // Função para avançar automaticamente o carrossel a cada 5 segundos
+    setInterval(function() {
+      instance.next(); // Avança para o próximo slide
+    }, 5000);
+  });
+  </script>
+</body>
+</html>
