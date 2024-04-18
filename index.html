@@ -22,30 +22,30 @@
       flex: 1 0 auto;
     }
 
+    .carousel .carousel-item img {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do container */
+    height: auto; /* Permite que a altura seja ajustada automaticamente mantendo a proporção */
+    object-fit: contain; /* Faz com que a imagem cubra o espaço do container mantendo sua proporção */
+    }
+
     /* Estilos para desktop */
-.desktop-carousel {
+  .desktop-carousel {
     display: block; /* Exibe o carrossel original por padrão */
-}
+    }
 
-.mobile-carousel {
+    .mobile-carousel {
     display: none; /* Oculta o carrossel para dispositivos móveis por padrão */
-}
+    }
 
-/* Estilos para dispositivos móveis usando media query */
-@media only screen and (max-width: 600px) {
+    /* Estilos para dispositivos móveis usando media query */
+    @media only screen and (max-width: 600px) {
     .desktop-carousel {
         display: none; /* Oculta o carrossel original em dispositivos móveis */
     }
 
     .mobile-carousel {
         display: block; /* Exibe o carrossel para dispositivos móveis */
-    }
-}
-
-    .carousel .carousel-item img {
-    width: 100%; /* Garante que a imagem ocupe toda a largura do container */
-    height: auto; /* Permite que a altura seja ajustada automaticamente mantendo a proporção */
-    object-fit: contain; /* Faz com que a imagem cubra o espaço do container mantendo sua proporção */
+      }
     }
 
     .card:hover {
